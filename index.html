@@ -5,100 +5,129 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Damilola Akinluwo · Software Developer</title>
 <meta name="description" content="Damilola Akinluwo, software developer in Abuja building backend systems and AI tooling in Python.">
+<meta name="theme-color" content="#05070d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="hero">
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="blobs" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
+<div class="glow" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap navin">
+    <a href="#top" class="logo">DA<span>_</span></a>
+    <div class="links">
+      <a href="#work">Work</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
   <div class="wrap">
-    <p class="kicker">Abuja, Nigeria</p>
-    <h1>Damilola Akinluwo</h1>
-    <p class="role">Software Developer · Python &amp; AI tooling</p>
-    <p class="lead">Computer Science graduate (2026) building backend systems in Python and FastAPI, with hands-on IT support experience.</p>
-    <div class="actions">
+    <div class="term reveal">
+      <div class="bar"><i></i><i></i><i></i><span>dami@abuja: ~</span></div>
+      <pre id="term" aria-label="whoami: Damilola Akinluwo, software developer"></pre>
+    </div>
+    <h1 class="reveal">Damilola<br><span class="grad">Akinluwo</span></h1>
+    <p class="role reveal">Software Developer · Python &amp; AI tooling · Abuja</p>
+    <p class="lead reveal">Computer Science graduate (2026) building backend systems in Python and FastAPI, with hands-on IT support experience.</p>
+    <div class="actions reveal">
       <a class="btn primary" href="mailto:damedra32@gmail.com">Email me</a>
-      <a class="btn" href="https://github.com/Oluu32" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://github.com/Oluu32" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
   </div>
 </header>
 
 <main class="wrap">
-  <section>
-    <h2>Experience</h2>
-    <article class="item">
-      <div class="row"><h3>Software Developer &amp; Personal Assistant</h3><span class="date">Current</span></div>
-      <p class="org">Akinlowo Global</p>
-      <ul><li>Built and delivered a fully functional car dealership management system, developed with AI-assisted coding tools.</li></ul>
-    </article>
-    <article class="item">
-      <div class="row"><h3>Automotive Sales Apprentice</h3><span class="date">2026 – Present</span></div>
-      <p class="org">Tee Max Autos</p>
-      <ul><li>Market cars for partner dealers and an importer through WhatsApp dealer groups and X.</li></ul>
-    </article>
-    <article class="item">
-      <div class="row"><h3>ICT Intern (SIWES)</h3><span class="date">2024</span></div>
-      <p class="org">Federal Ministry of Justice, Abuja · ICT Department</p>
-      <ul><li>Carried out maintenance and troubleshooting on staff computer systems.</li></ul>
-    </article>
+  <section id="work">
+    <h2 class="reveal"><span>01</span> Experience</h2>
+    <ol class="timeline">
+      <li class="reveal">
+        <span class="when">Current</span>
+        <h3>Software Developer &amp; Personal Assistant</h3>
+        <p class="org">Akinlowo Global</p>
+        <p>Built and delivered a fully functional car dealership management system, developed with AI-assisted coding tools.</p>
+      </li>
+      <li class="reveal">
+        <span class="when">2026 – Present</span>
+        <h3>Automotive Sales Apprentice</h3>
+        <p class="org">Tee Max Autos</p>
+        <p>Market cars for partner dealers and an importer through WhatsApp dealer groups and X.</p>
+      </li>
+      <li class="reveal">
+        <span class="when">2024</span>
+        <h3>ICT Intern (SIWES)</h3>
+        <p class="org">Federal Ministry of Justice, Abuja · ICT Department</p>
+        <p>Carried out maintenance and troubleshooting on staff computer systems.</p>
+      </li>
+    </ol>
   </section>
 
-  <section>
-    <h2>Projects</h2>
+  <section id="projects">
+    <h2 class="reveal"><span>02</span> Projects</h2>
+    <p class="hint reveal">Tap a skill below to see where I used it.</p>
     <div class="cards">
-      <article class="card">
+      <article class="card reveal" data-skills="python fastapi supabase paystack api">
         <span class="tag">In development</span>
         <h3>FareBeep</h3>
         <p>Chat-based travel concierge for Nigerian domestic flight search, fare alerts, booking and payments on WhatsApp and Telegram.</p>
-        <p class="stack">Python · FastAPI · Supabase · Paystack</p>
-        <a href="https://github.com/Oluu32/farebeep" target="_blank" rel="noopener">View code →</a>
+        <div class="stack"><b>Python</b><b>FastAPI</b><b>Supabase</b><b>Paystack</b></div>
+        <a href="https://github.com/Oluu32/farebeep" target="_blank" rel="noopener">View code ↗</a>
       </article>
-      <article class="card">
+      <article class="card reveal" data-skills="python automation git">
+        <span class="tag ok">Delivered</span>
         <h3>Dealership Management System</h3>
         <p>Inventory, sales and financial tracking with branded naira receipts, built and handed over to Akinlowo Global.</p>
-        <p class="stack">Delivered to a client</p>
-        <a href="https://github.com/Oluu32/akinlowo-global-dealership" target="_blank" rel="noopener">View code →</a>
+        <div class="stack"><b>Client project</b><b>AI-assisted</b></div>
+        <a href="https://github.com/Oluu32/akinlowo-global-dealership" target="_blank" rel="noopener">View code ↗</a>
       </article>
-      <article class="card">
+      <article class="card reveal" data-skills="python sqlite mcp">
         <h3>Naija Fintech Receipt MCP Server</h3>
         <p>MCP server that records Nigerian fintech transfers and answers recipient totals and recent-transfer lookups.</p>
-        <p class="stack">Python · SQLite · MCP</p>
+        <div class="stack"><b>Python</b><b>SQLite</b><b>MCP</b></div>
       </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="reveal"><span>03</span> Skills</h2>
+    <div class="chips reveal">
+      <button data-k="python">Python</button><button data-k="fastapi">FastAPI</button><button data-k="api">REST APIs</button>
+      <button data-k="automation">Workflow automation</button><button data-k="sqlite">SQLite</button><button data-k="supabase">Supabase</button>
+      <button data-k="paystack">Paystack</button><button data-k="mcp">MCP</button><button data-k="git">Git &amp; GitHub</button>
+      <button data-k="bash">Bash scripting</button><button data-k="it">IT support</button>
     </div>
   </section>
 
   <section class="two">
-    <div>
-      <h2>Education</h2>
-      <div class="row"><h3>BSc Computer Science</h3><span class="date">2026</span></div>
-      <p class="org">Olusegun Agagu University of Science and Technology</p>
-      <div class="row"><h3>Computer Diploma</h3><span class="date">2018</span></div>
-      <p class="org">Maxtex Computer</p>
+    <div class="reveal">
+      <h2><span>04</span> Education</h2>
+      <div class="edu"><h3>BSc Computer Science</h3><p class="org">Olusegun Agagu University of Science and Technology · 2026</p></div>
+      <div class="edu"><h3>Computer Diploma</h3><p class="org">Maxtex Computer · 2018</p></div>
     </div>
-    <div>
-      <h2>Training</h2>
+    <div class="reveal">
+      <h2><span>05</span> Training</h2>
       <ul class="plain">
-        <li><strong>ALX Software Engineering:</strong> completed coursework, 2023</li>
-        <li><strong>Python (Udemy):</strong> completed</li>
-        <li><strong>DevOps Engineering (TS Academy):</strong> scholarship awarded, 2026</li>
+        <li><b>ALX Software Engineering</b><small>Completed coursework, 2023</small></li>
+        <li><b>Python (Udemy)</b><small>Completed</small></li>
+        <li><b>DevOps Engineering, TS Academy</b><small>Scholarship awarded, 2026</small></li>
       </ul>
     </div>
   </section>
 
-  <section>
-    <h2>Skills</h2>
-    <div class="chips">
-      <span>Python</span><span>FastAPI</span><span>REST APIs</span><span>Workflow automation</span>
-      <span>SQLite</span><span>Supabase</span><span>Paystack</span><span>MCP</span>
-      <span>Git &amp; GitHub</span><span>Bash scripting</span><span>IT support</span>
+  <section id="contact" class="contact reveal">
+    <h2><span>06</span> Contact</h2>
+    <p class="big">Let's build something.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:damedra32@gmail.com">damedra32@gmail.com</a>
+      <a class="btn" href="https://github.com/Oluu32" target="_blank" rel="noopener">github.com/Oluu32 ↗</a>
     </div>
   </section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <p>Get in touch: <a href="mailto:damedra32@gmail.com">damedra32@gmail.com</a> · <a href="https://github.com/Oluu32" target="_blank" rel="noopener">github.com/Oluu32</a></p>
-  </div>
-</footer>
+<footer><div class="wrap">© 2026 Damilola Akinluwo</div></footer>
+<script src="app.js"></script>
 </body>
 </html>
