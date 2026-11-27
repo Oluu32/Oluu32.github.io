@@ -96,3 +96,5 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
 .term{backdrop-filter:blur(14px);background:rgba(10,10,25,.6)}
 h2{background:linear-gradient(90deg,#fff,#cfc4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
 h2 span{-webkit-text-fill-color:var(--c)}
+
+.edu .sub{color:var(--muted);font-size:.9rem}
